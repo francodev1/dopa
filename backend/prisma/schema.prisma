@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  // Usar PostgreSQL em produção; a variável DATABASE_URL deve apontar para o
+  // banco Postgres (ex: postgresql://user:pass@host:5432/dbname?schema=public)
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Subscription {
+  id                    String   @id @default(cuid())
+  userId                String?
+  phone                 String?
+  stripeCustomerId      String?
+  stripeSubscriptionId  String   @unique
+  stripePriceId         String?
+  status                String
+  plan                  String?
+  scheduledDeactivationAt DateTime?
+  deactivatedAt           DateTime?
+  currentPeriodEnd      DateTime?
+  canceledAt            DateTime?
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+}

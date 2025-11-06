@@ -5,7 +5,10 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
+  "dev": "nodemon src/server.js",
+  "prisma:generate": "prisma generate",
+  "prisma:migrate": "prisma migrate dev --name init",
+  "prisma:studio": "prisma studio"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +22,9 @@
     "express-rate-limit": "^6.7.0",
     "helmet": "^7.0.0",
     "openai": "^4.1.0",
-    "winston": "^3.8.2"
+  "winston": "^3.8.2",
+  "prisma": "^5.11.0",
+  "@prisma/client": "^5.11.0",
+  "stripe": "^17.6.0"
   }
 }
