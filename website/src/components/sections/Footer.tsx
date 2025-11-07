@@ -1,6 +1,7 @@
 "use client"
 
 import { MessageSquare, Mail, MapPin, Github, Linkedin, Twitter } from "lucide-react"
+import Image from "next/image"
 
 const navigation = {
   product: [
@@ -42,11 +43,17 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-6 sm:gap-8 mb-8">
           {/* Brand */}
           <div className="col-span-1 sm:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
-                <MessageSquare className="w-6 h-6 text-white" />
+            <div className="flex items-center gap-3 mb-4">
+              <div className="relative w-10 h-10">
+                <Image 
+                  src="/logo.svg" 
+                  alt="DoP IA Logo" 
+                  width={40} 
+                  height={40}
+                  className="drop-shadow-lg"
+                />
               </div>
-              <span className="text-xl font-bold text-white">AI Agent</span>
+              <span className="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">DoP IA</span>
             </div>
             <p className="text-gray-400 mb-4 max-w-xs">
               Automatize seu atendimento com inteligência artificial e aumente a satisfação dos seus clientes.
@@ -54,8 +61,8 @@ export function Footer() {
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-sm">
                 <Mail className="w-4 h-4" />
-                <a href="mailto:contato@aiagent.com.br" className="hover:text-white">
-                  contato@aiagent.com.br
+                <a href="mailto:contato@dopia.com.br" className="hover:text-white">
+                  contato@dopia.com.br
                 </a>
               </div>
               <div className="flex items-center gap-2 text-sm">
@@ -127,7 +134,7 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Copyright */}
             <p className="text-sm text-gray-400">
-              © 2025 AI E-commerce Agent. Todos os direitos reservados.
+              © 2025 DoP IA. Todos os direitos reservados.
             </p>
 
             {/* Social */}

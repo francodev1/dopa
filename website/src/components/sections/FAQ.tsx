@@ -135,7 +135,7 @@ export function FAQ() {
             Ainda tem dúvidas?
           </p>
           <a
-            href="mailto:contato@aiagent.com.br"
+            href="mailto:contato@dopia.com.br"
             className="text-indigo-600 hover:text-indigo-700 font-semibold"
           >
             Fale com nosso time →

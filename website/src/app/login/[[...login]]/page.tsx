@@ -4,7 +4,7 @@ import { SignIn } from "@clerk/nextjs"
 import { ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Login | AI E-commerce Agent",
+  title: "Login | DoP IA",
   description: "Faça login na sua conta",
 }
 

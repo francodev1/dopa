@@ -1,7 +1,7 @@
 {
-  "name": "ai-ecommerce-agent-backend",
+  "name": "dopia-backend",
   "version": "1.0.0",
-  "description": "Backend para Agente de IA de Atendimento em E-commerce",
+  "description": "Backend DoP IA - E-commerce Inteligente",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",

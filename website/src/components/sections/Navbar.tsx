@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { useUser, UserButton } from "@clerk/nextjs"
 import { Button } from "@/components/ui/button"
 import { MessageSquare, Menu, X } from "lucide-react"
+import Image from "next/image"
 
 const navigation = [
   { name: "Funcionalidades", href: "#features" },
@@ -58,13 +59,19 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <a href="/" className="flex items-center gap-2 group">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center group-hover:scale-110 transition-transform">
-                <MessageSquare className="w-6 h-6 text-white" />
+            <a href="/" className="flex items-center gap-3 group">
+              <div className="relative w-10 h-10 group-hover:scale-110 transition-transform">
+                <Image 
+                  src="/logo.svg" 
+                  alt="DoP IA Logo" 
+                  width={40} 
+                  height={40}
+                  className="drop-shadow-lg"
+                />
               </div>
-              <span className={`text-xl font-bold transition-colors ${
-                isScrolled ? "text-gray-900" : "text-white"
-              }`}>AI Agent</span>
+              <span className={`text-2xl font-bold transition-colors bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text ${
+                isScrolled ? "text-transparent" : "text-white"
+              }`}>DoP IA</span>
             </a>
 
             {/* Desktop Navigation */}

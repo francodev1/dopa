@@ -96,7 +96,7 @@ export async function POST(req: NextRequest) {
 
     // Criar sessão de checkout do Stripe
     const session = await stripe.checkout.sessions.create({
-  phone_number_collection: { enabled: true },
+      phone_number_collection: { enabled: true },
       customer_email: user.emailAddresses[0].emailAddress,
       client_reference_id: userId,
       payment_method_types: ['card'],
@@ -109,6 +109,7 @@ export async function POST(req: NextRequest) {
       ],
       success_url: `${process.env.NEXT_PUBLIC_APP_URL}/dashboard?success=true&session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${process.env.NEXT_PUBLIC_APP_URL}/?canceled=true`,
+      locale: 'pt-BR', // Traduzir Stripe para português
       metadata: {
         userId,
         userEmail: user.emailAddresses[0].emailAddress,

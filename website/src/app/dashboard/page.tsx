@@ -17,7 +17,7 @@ export default async function DashboardPage() {
             Bem-vindo, {user.firstName}! 👋
           </h1>
           <p className="text-gray-600">
-            Este é seu dashboard. Aqui você gerencia tudo do seu AI Agent.
+            Este é seu dashboard. Aqui você gerencia tudo do seu DoP IA.
           </p>
         </div>
 

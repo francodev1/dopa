@@ -4,7 +4,7 @@ import { SignUp } from "@clerk/nextjs"
 import { ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Cadastro | AI E-commerce Agent",
+  title: "Cadastro | DoP IA",
   description: "Crie sua conta e comece seu teste grátis de 14 dias",
 }
 

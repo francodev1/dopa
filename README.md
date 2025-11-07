@@ -1,6 +1,14 @@
-# 🚀 AI E-commerce Agent - Sistema Completo Pronto para Produção
+# 🚀 DoP IA - Sistema Completo de E-commerce Inteligente
 
-> **Status:** ✅ PRONTO PARA PUBLICAR | **Modo:** 🔒 Seguro (dry-run)
+> **Status:** ✅ PRONTO PARA PRODUZIR | **Modo:** 🔒 Seguro (dry-run)
+
+<div align="center">
+  <img src="website/public/logo.svg" alt="DoP IA Logo" width="150"/>
+  
+  **E-commerce Inteligente com IA**
+  
+  Automatize 80% do seu atendimento com Inteligência Artificial
+</div>
 
 ---
 
